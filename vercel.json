@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "MarkSecure/asgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "MarkSecure/asgi.py"
+      }
+    ]
+}
