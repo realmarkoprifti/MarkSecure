@@ -85,13 +85,8 @@ WSGI_APPLICATION = 'MarkSecure.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'URL': 'postgresql://postgres:NV8Midqrp2RuX3PmKPy9@containers-us-west-135.railway.app:5563/railway',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': 'NV8Midqrp2RuX3PmKPy9',
-        'HOST': 'containers-us-west-135.railway.app',
-        'PORT': 5563,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
